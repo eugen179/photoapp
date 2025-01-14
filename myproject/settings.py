@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 
 # 
 DATABASES={
-    'default':dj_database_url.parse("")
+    'default':dj_database_url.parse("postgresql://testcalorie_user:Yb1J39EN4x8DqUovbTb4cCfsrHBkOkxo@dpg-ctum4trqf0us73f65st0-a.oregon-postgres.render.com/testcalorie")
 }
 
 
