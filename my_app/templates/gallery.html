@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Photo Gallery{% endblock %}
+
+{% block content %}
+<h2>Gallery</h2>
+<div class="gallery">
+    {% if photos %}
+        {% for photo in photos %}
+            <div class="photo-item">
+                <img src="{{ photo.image.url }}" alt="{{ photo.title }}" />
+                <h3>{{ photo.title }}</h3>
+                <p>{{ photo.description }}</p>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>You have not uploaded any photos yet.</p>
+    {% endif %}
+</div>
+{% endblock %}

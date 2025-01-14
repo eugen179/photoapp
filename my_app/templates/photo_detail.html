@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ photo.title }}{% endblock %}
+
+{% block content %}
+<h1>{{ photo.title }}</h1>
+<img src="{{ photo.image.url }}" alt="{{ photo.title }}">
+<p>{{ photo.description }}</p>
+<p>Likes: {{ photo.total_likes }}</p>
+<a href="{% url 'like_photo' photo.pk %}">Like</a>
+{% endblock %}
