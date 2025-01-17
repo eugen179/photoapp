@@ -9,4 +9,20 @@
     {{ form.as_p }}
     <button type="submit">Update Profile</button>
 </form>
+
+<h2>Your Uploaded Photos</h2>
+{% if photos %}
+    <div class="gallery">
+        {% for photo in photos %}
+            <div class="photo-item">
+                <img src="{{ photo.image.url }}" alt="{{ photo.title }}">
+                <h3>{{ photo.title }}</h3>
+                <p>{{ photo.description }}</p>
+                <a href="{% url 'photo_detail' photo.pk %}">View Details</a>
+            </div>
+        {% endfor %}
+    </div>
+{% else %}
+    <p>You have not uploaded any photos yet.</p>
+{% endif %}
 {% endblock %}

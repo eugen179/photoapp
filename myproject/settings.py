@@ -136,6 +136,7 @@ MEDIA_ROOT = BASE_DIR / 'media'  # Correct way to define media directory path
 STATIC_URL = '/static/'
 STATICFILES__DIRS =[BASE_DIR / "static"]
 
+
 LOGOUT_REDIRECT_URL = '/'
 LOGIN_REDIRECT_URL = '/'  
 
