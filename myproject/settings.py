@@ -75,19 +75,19 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'photodb',
-#         'USER': 'photouser',
-#         'PASSWORD': 'maina05',
-#         'HOST': 'localhost',
-#         'PORT': '5432',
-#     }
-# }
-DATABSE={
-    'default':dj_database_url.parse("postgresql://testcalorie_user:Yb1J39EN4x8DqUovbTb4cCfsrHBkOkxo@dpg-ctum4trqf0us73f65st0-a.oregon-postgres.render.com/testcalorie")
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'photodb',
+        'USER': 'photouser',
+        'PASSWORD': 'maina05',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
 }
+# DATABSE={
+#     'default':dj_database_url.parse("postgresql://testcalorie_user:Yb1J39EN4x8DqUovbTb4cCfsrHBkOkxo@dpg-ctum4trqf0us73f65st0-a.oregon-postgres.render.com/testcalorie")
+# }
 
 
 # Password validation
